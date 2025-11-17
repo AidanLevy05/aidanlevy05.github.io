@@ -33,10 +33,12 @@ body {
 
     /* smooth dark gray -> navy gradient, no bands */
     background: linear-gradient(to bottom,
-            #020617 0%,
-            #050816 30%,
-            #0b1120 65%,
-            #111827 100%);
+            #0a0f1b 0%,
+            #0d1421 30%,
+            #101827 65%,
+            #151c2b 100%);
+    background-attachment: fixed;
+
     background-attachment: fixed;
     background-blend-mode: normal;
 }
