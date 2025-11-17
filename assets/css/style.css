@@ -400,6 +400,34 @@ a:hover {
     opacity: 0.6;
 }
 
+.skills-section {
+    padding: 4rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.skill-group h3 {
+    margin-bottom: 0.5rem;
+}
+
+.skill-group ul {
+    list-style: none;
+}
+
+.skill-group li+li {
+    margin-top: 0.25rem;
+}
+
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
