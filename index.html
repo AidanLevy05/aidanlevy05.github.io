@@ -1,1 +1,225 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aidan Levy | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Aidan Levy - Computer Science & Data Science student, AI & HPC projects." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">AIDAN<span>LEVY</span></div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / INTRO -->
+        <section class="hero" id="top">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Computer Science & Data Science</p>
+                    <h1>Hi, I'm <span>Aidan Levy</span>.</h1>
+                    <p class="hero-subtitle">
+                        I build practical AI and systems projects – from CNNs and DSP tools to
+                        high-performance C / MPI code – and actually ship them.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn secondary" href="#contact">Get in Touch</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="https://github.com/AidanLevy05" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <!-- replace LinkedIn URL later -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container section-inner two-column">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        I am a Computer Science and Data Science student with a focus on
+                        artificial intelligence, high-performance computing, and digital signal processing.
+                        I like projects that are technically challenging and actually useful, not just demo-ware.
+                    </p>
+                    <p>
+                        Recent work includes convolutional neural networks for facial emotion recognition,
+                        semi-supervised models, OpenMPI-based linear algebra in C, and a set of practical tools
+                        for working with PDFs and audio.
+                    </p>
+                </div>
+                <div class="about-highlight">
+                    <h3>What I enjoy working on</h3>
+                    <ul>
+                        <li>Neural networks (PyTorch) and practical ML</li>
+                        <li>High-performance C / C++ with MPI & OpenMP</li>
+                        <li>Digital signal processing & audio tools</li>
+                        <li>Security-minded backend and automation scripts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="section-subtitle">
+                    A few selected projects. Link these to your real GitHub repos when you’re ready.
+                </p>
+
+                <div class="grid projects-grid">
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <h3>FER2013 CNN</h3>
+                        <p>
+                            Convolutional neural network trained on the FER2013 dataset for facial emotion
+                            recognition, using PyTorch. Includes training pipeline, evaluation scripts,
+                            and experiment tracking.
+                        </p>
+                        <ul class="tags">
+                            <li>PyTorch</li>
+                            <li>CNN</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                        <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">
+                            View on GitHub
+                        </a>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card">
+                        <h3>OpenMPI Matrix Library</h3>
+                        <p>
+                            Matrix operations (multiplication, REF, RREF, LU) implemented in C with OpenMPI
+                            for distributed performance. Includes timing benchmarks, speedup, and efficiency analysis.
+                        </p>
+                        <ul class="tags">
+                            <li>C</li>
+                            <li>OpenMPI</li>
+                            <li>HPC</li>
+                        </ul>
+                        <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">
+                            View on GitHub
+                        </a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card">
+                        <h3>PDF & PPTX AI Reader</h3>
+                        <p>
+                            Web app that ingests PDFs and presentations, extracts key points, and summarizes
+                            them using an AI backend, with a simple front-end interface and downloadable outputs.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>NLP</li>
+                        </ul>
+                        <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">
+                            View on GitHub
+                        </a>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="card">
+                        <h3>Digital Audio Tools</h3>
+                        <p>
+                            A set of Python tools for digital signal processing – including filtering,
+                            compression experiments, and real-time audio processing prototypes with a web UI.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>DSP</li>
+                            <li>Web</li>
+                        </ul>
+                        <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">
+                            View on GitHub
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="grid skills-grid">
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C, C++</li>
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>Bash</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tools & Frameworks</h3>
+                        <ul>
+                            <li>PyTorch</li>
+                            <li>MPI / OpenMPI</li>
+                            <li>OpenMP</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Domains</h3>
+                        <ul>
+                            <li>Machine Learning & AI</li>
+                            <li>High-Performance Computing</li>
+                            <li>Digital Signal Processing</li>
+                            <li>Data Science & Statistics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container section-inner">
+                <h2>Contact</h2>
+                <p>
+                    Want to talk about a project, internship, collaboration, or anything technical?
+                    The best way to reach me is by email.
+                </p>
+                <p class="contact-email">
+                    <a href="mailto:aidanjlevy@gmail.com">aidanjlevy@gmail.com</a>
+                </p>
+                <p class="contact-note">
+                    You can also reach out on <a href="https://www.linkedin.com" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> Aidan Levy</span>
+            <span class="footer-separator">•</span>
+            <span>Built with plain HTML, CSS, and JavaScript.</span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
