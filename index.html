@@ -5,15 +5,39 @@
     <meta charset="UTF-8" />
     <title>Aidan Levy | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Aidan Levy - Computer Science & Data Science student, AI & HPC projects." />
+    <meta name="description"
+        content="Aidan Levy - Computer Science & Data Science student building AI, HPC, cryptography, and DSP projects that actually ship." />
+    <meta name="keywords"
+        content="Aidan Levy, portfolio, computer science student, data science, AI, machine learning, high performance computing, MPI, OpenMP, digital signal processing, Salisbury University" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:title" content="Aidan Levy | Computer Science & Data Science Portfolio" />
+    <meta property="og:description"
+        content="Projects in AI, high-performance C with MPI, digital signal processing, and security-focused tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aidanlevy05.github.io" />
+    <!-- Update this image path when you pick a proper social preview image -->
+    <meta property="og:image" content="https://aidanlevy05.github.io/assets/img/AidanLevy.jpeg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aidan Levy | Portfolio" />
+    <meta name="twitter:description"
+        content="Computer Science & Data Science projects in AI, HPC, DSP, and security." />
+    <meta name="twitter:image" content="https://aidanlevy05.github.io/assets/img/AidanLevy.jpeg" />
+
+    <link rel="canonical" href="https://aidanlevy05.github.io" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="site-header">
         <div class="container nav-container">
             <div class="logo">AIDAN<span>LEVY</span></div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -22,7 +46,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- HERO / INTRO -->
         <section class="hero" id="top">
             <div class="container hero-inner">
@@ -30,8 +54,8 @@
                     <p class="eyebrow">Computer Science & Data Science</p>
                     <h1>Hi, I'm <span>Aidan Levy</span>.</h1>
                     <p class="hero-subtitle">
-                        I build practical AI and systems projects: Cryptography, CNNs and DSP tools to
-                        high performance C or MPI code, and actually ship them.
+                        I build practical AI and systems projects, from cryptography, CNNs, and DSP tools
+                        to high-performance C and MPI code, and I actually ship them.
                     </p>
                     <div class="hero-actions">
                         <a class="btn primary" href="#projects">View Projects</a>
@@ -55,7 +79,7 @@
                 <div>
                     <h2>About</h2>
                     <p>
-                        I am a Computer Science (Foundations, Algorithms, and Artificial Intelligence Focus) and
+                        I am a Computer Science (Foundations, Algorithms, and Artificial Intelligence focus) and
                         Data Science student with interests in artificial intelligence, high performance computing,
                         and digital signal processing. I enjoy building technically challenging and useful systems
                         where I can actually learn something real along the way.
@@ -67,7 +91,8 @@
                     </p>
                     <p>
                         Outside of computing, I am also a Brazilian Jiu Jitsu coach at Padawan Jiu Jitsu.
-                        You can learn more at <a href="https://padawanjj.com" target="_blank">padawanjj.com</a>.
+                        You can learn more at
+                        <a href="https://padawanjj.com" target="_blank" rel="noopener noreferrer">padawanjj.com</a>.
                     </p>
                 </div>
 
@@ -76,15 +101,15 @@
 
                     <!-- IMAGE -->
                     <div class="about-image" style="margin-bottom:20px; text-align:center;">
-                        <img src="assets/img/AidanLevy.jpeg" alt="Aidan Levy"
+                        <img src="assets/img/AidanLevy.jpeg" alt="Portrait of Aidan Levy" width="220" height="220"
                             style="width:220px; border-radius:12px; object-fit:cover;">
                     </div>
 
                     <h3>What I enjoy working on</h3>
                     <ul>
                         <li>Neural networks (PyTorch) and practical ML</li>
-                        <li>High performance C / C++ with MPI & OpenMP</li>
-                        <li>Digital signal processing & audio tools</li>
+                        <li>High performance C / C++ with MPI &amp; OpenMP</li>
+                        <li>Digital signal processing &amp; audio tools</li>
                         <li>Security-minded backend and automation scripts</li>
                     </ul>
                 </div>
@@ -92,13 +117,12 @@
             </div>
         </section>
 
-
         <!-- PROJECTS -->
         <section class="section" id="projects">
             <div class="container">
                 <h2>Projects</h2>
                 <p class="section-subtitle">
-                    These projects demonstrate my software engineering interests related to computer science & data
+                    These projects demonstrate my software engineering interests related to computer science and data
                     science.
                 </p>
 
@@ -109,7 +133,7 @@
                         <h3>Matrix</h3>
                         <p>
                             A full linear algebra engine in C featuring matrix multiplication, REF, RREF, LU
-                            decomposition, and OpenMPI based parallelization. Includes benchmarks, speedup
+                            decomposition, and OpenMPI-based parallelization. Includes benchmarks, speedup
                             analysis, and a complete test suite.
                         </p>
                         <ul class="tags">
@@ -127,7 +151,7 @@
                     <article class="card">
                         <h3>Salisbury University DSP</h3>
                         <p>
-                            A digital signal processing toolset including realn time filtering, compression
+                            A digital signal processing toolset including real-time filtering, compression
                             prototypes, FFT visualizations, and a web-based interface written in Python and React.
                         </p>
                         <ul class="tags">
@@ -151,7 +175,7 @@
                         <ul class="tags">
                             <li>Python</li>
                             <li>Cryptography</li>
-                            <li>Cloud Service Storage</li>
+                            <li>Security</li>
                         </ul>
                         <a class="card-link" href="https://github.com/AidanLevy05/ByteScatter" target="_blank"
                             rel="noopener noreferrer">
@@ -163,9 +187,9 @@
                     <article class="card">
                         <h3>GateKeeper</h3>
                         <p>
-                            A Flask based password vault with client side encryption, device verification,
-                            role based access, SHA-SHA-256 encryption, and secure credential storage. Fully deployed and
-                            functional.
+                            A Flask-based password vault with client-side encryption, device verification,
+                            role-based access control, SHA-256 password hashing, and secure credential storage.
+                            Fully deployed and functional.
                         </p>
                         <ul class="tags">
                             <li>Python</li>
@@ -182,7 +206,6 @@
             </div>
         </section>
 
-
         <!-- SKILLS -->
         <section class="section" id="skills">
             <div class="container">
@@ -198,21 +221,21 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Tools & Frameworks</h3>
+                        <h3>Tools &amp; Frameworks</h3>
                         <ul>
                             <li>PyTorch</li>
                             <li>MPI / OpenMPI</li>
                             <li>OpenMP</li>
-                            <li>Git & GitHub</li>
+                            <li>Git &amp; GitHub</li>
                         </ul>
                     </div>
                     <div>
                         <h3>Domains</h3>
                         <ul>
-                            <li>Machine Learning & AI</li>
+                            <li>Machine Learning &amp; AI</li>
                             <li>High-Performance Computing</li>
                             <li>Digital Signal Processing</li>
-                            <li>Data Science & Statistics</li>
+                            <li>Data Science &amp; Statistics</li>
                         </ul>
                     </div>
                 </div>
@@ -231,7 +254,8 @@
                     <a href="mailto:aidanjlevy@gmail.com">aidanjlevy@gmail.com</a>
                 </p>
                 <p class="contact-note">
-                    You can also reach out on <a href="https://www.linkedin.com" target="_blank"
+                    You can also reach out on
+                    <a href="https://www.linkedin.com/in/aidan-levy/" target="_blank"
                         rel="noopener noreferrer">LinkedIn</a>.
                 </p>
             </div>
@@ -248,4 +272,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
