@@ -1,6 +1,6 @@
 :root {
-    --bg: #050608;
-    --bg-alt: #11131a;
+    --bg: #0b1120;
+    --bg-alt: #111827;
     --card-bg: #151823;
     --accent: #4ade80;
     --accent-soft: rgba(74, 222, 128, 0.12);
@@ -8,7 +8,7 @@
     --text-muted: #9ca3af;
     --border-subtle: #272b38;
     --radius-lg: 18px;
-    --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.5);
+    --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.45);
     --max-width: 960px;
 }
 
@@ -28,9 +28,26 @@ body {
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, #1f2933 0, #050608 45%);
+    /* lighter, happier gray-ish gradient */
+    background: radial-gradient(circle at top, #4b5563 0, #0b1120 55%);
     color: var(--text);
     line-height: 1.6;
+}
+
+/* Make all inline links readable (no purple) */
+a {
+    color: var(--accent);
+    text-decoration-color: rgba(74, 222, 128, 0.8);
+}
+
+a:visited {
+    color: var(--accent);
+    text-decoration-color: rgba(74, 222, 128, 0.8);
+}
+
+a:hover {
+    color: #bbf7d0;
+    text-decoration-color: #bbf7d0;
 }
 
 /* Utility */
@@ -76,7 +93,7 @@ body {
     top: 0;
     z-index: 10;
     backdrop-filter: blur(14px);
-    background: linear-gradient(to bottom, rgba(5, 6, 8, 0.92), rgba(5, 6, 8, 0.6));
+    background: linear-gradient(to bottom, rgba(11, 17, 32, 0.95), rgba(11, 17, 32, 0.7));
     border-bottom: 1px solid rgba(39, 43, 56, 0.9);
 }
 
@@ -222,7 +239,7 @@ body {
 
 .hero-links a {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .hero-links a:hover {
@@ -312,7 +329,7 @@ body {
     margin-top: 0.3rem;
     font-size: 0.85rem;
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .card-link:hover {
@@ -349,7 +366,7 @@ body {
 .contact-email a {
     font-size: 1.05rem;
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .contact-email a:hover {
@@ -367,7 +384,7 @@ body {
     border-top: 1px solid var(--border-subtle);
     padding: 1.2rem 0 1.6rem;
     margin-top: 2rem;
-    background: rgba(5, 6, 8, 0.9);
+    background: rgba(11, 17, 32, 0.95);
 }
 
 .footer-inner {
