@@ -299,29 +299,24 @@ a:hover {
 }
 
 /* Experience */
-#experience .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    max-width: 900px;
-    margin: 0;
-    padding: 0;
+.experience-grid {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
 }
 
-#experience .experience-card {
-    margin: 0;
-    padding: 18px;
-    border-radius: 8px;
-    background: var(--card-bg, #ffffff);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-}
-
-/* Slightly larger gap on wider screens */
-@media (min-width: 900px) {
-    #experience .experience-list {
-        gap: 32px;
+@media (min-width: 768px) {
+    .experience-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+/* Ensure uniform style across project + experience cards */
+.experience-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 
 /* Projects */
 .projects-grid {
