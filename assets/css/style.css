@@ -298,6 +298,31 @@ a:hover {
     color: var(--accent);
 }
 
+/* Experience */
+#experience .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+#experience .experience-card {
+    margin: 0;
+    padding: 18px;
+    border-radius: 8px;
+    background: var(--card-bg, #ffffff);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Slightly larger gap on wider screens */
+@media (min-width: 900px) {
+    #experience .experience-list {
+        gap: 32px;
+    }
+}
+
 /* Projects */
 .projects-grid {
     margin-top: 2rem;
