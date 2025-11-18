@@ -164,8 +164,14 @@ a:hover {
 
 @media (max-width: 640px) {
     .nav {
-        display: none;
-        /* keep it simple for now */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        margin-left: 0;
     }
 }
 
@@ -299,6 +305,31 @@ a:hover {
 }
 
 /* Experience */
+#experience .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+#experience .experience-card {
+    margin: 0;
+    padding: 18px;
+    border-radius: 8px;
+    background: var(--card-bg, #ffffff);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Slightly larger gap on wider screens */
+@media (min-width: 900px) {
+    #experience .experience-list {
+        gap: 32px;
+    }
+}
+
+/* Experience – use same card visual language as Projects */
 .experience-grid {
     margin-top: 2rem;
     display: grid;
@@ -311,12 +342,21 @@ a:hover {
     }
 }
 
-/* Ensure uniform style across project + experience cards */
-.experience-card p {
+.experience-card .muted {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.experience-points {
+    margin-top: 0.75rem;
+    padding-left: 1.1rem;
     color: var(--text-muted);
     font-size: 0.9rem;
 }
 
+.experience-points li+li {
+    margin-top: 0.25rem;
+}
 
 /* Projects */
 .projects-grid {
@@ -373,6 +413,22 @@ a:hover {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+/* Resume */
+.nav-resume {
+    margin-left: 1.5rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(74, 222, 128, 0.6);
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+.nav-resume:hover {
+    background: rgba(34, 197, 94, 0.09);
+    color: #bbf7d0;
+    border-color: rgba(74, 222, 128, 0.9);
 }
 
 /* Skills */
