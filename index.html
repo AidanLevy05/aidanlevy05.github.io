@@ -3,352 +3,361 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Aidan Levy | Portfolio</title>
+    <title>Aidan Levy | Systems, HPC, and DSP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="Aidan Levy - Computer Science & Data Science student building AI, HPC, cryptography, and DSP projects that actually ship." />
+        content="Aidan Levy is a Computer Science student focused on systems programming, high-performance computing, and digital signal processing." />
     <meta name="keywords"
-        content="Aidan Levy, portfolio, computer science student, data science, AI, machine learning, high performance computing, MPI, OpenMP, digital signal processing, Salisbury University" />
+        content="Aidan Levy, systems programming, HPC, MPI, OpenMP, digital signal processing, C, Linux, Salisbury University" />
 
-    <!-- Open Graph / social preview -->
-    <meta property="og:title" content="Aidan Levy | Computer Science & Data Science Portfolio" />
+    <meta property="og:title" content="Aidan Levy | Systems, HPC, and DSP" />
     <meta property="og:description"
-        content="Projects in AI, high-performance C with MPI, digital signal processing, and security-focused tools." />
+        content="Portfolio focused on systems programming, MPI/OpenMP work, signal processing, and performance-oriented engineering." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://aidanlevy05.github.io" />
-
-    <!-- Update this image path when you pick a proper social preview image -->
     <meta property="og:image" content="https://aidanlevy05.github.io/assets/img/AidanLevy.jpeg" />
 
-    <!-- Favicon -->
     <link rel="icon" href="assets/img/AidanLevy.jpeg" type="image/jpeg" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Aidan Levy | Portfolio" />
+    <meta name="twitter:title" content="Aidan Levy | Systems, HPC, and DSP" />
     <meta name="twitter:description"
-        content="Computer Science & Data Science projects in AI, HPC, DSP, and security." />
+        content="Computer Science student focused on C, Linux systems work, parallel computing, and audio signal processing." />
     <meta name="twitter:image" content="https://aidanlevy05.github.io/assets/img/AidanLevy.jpeg" />
 
     <link rel="canonical" href="https://aidanlevy05.github.io" />
-
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="container nav-container">
-            <div class="logo">AIDAN<span>LEVY</span></div>
+            <a class="logo" href="#top" aria-label="Aidan Levy home">AIDAN<span>LEVY</span></a>
             <nav class="nav" aria-label="Main navigation">
-                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
-                <a href="assets/resume/AidanLevyResume.pdf" class="nav-resume" download="AidanLevyResume.pdf">
-                    Resume
-                </a>
-
+                <a href="assets/resume/AidanLevyResume.pdf" class="nav-resume" download="AidanLevyResume.pdf">Resume</a>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
-        <!-- HERO / INTRO -->
         <section class="hero" id="top">
-            <div class="container hero-inner">
-                <div class="hero-text">
-                    <p class="eyebrow">Computer Science & Data Science</p>
-                    <h1>Hi, I'm <span>Aidan Levy</span>.</h1>
-                    <p class="hero-subtitle">
-                        I build neural networks, cryptographic utilities, DSP pipelines, and parallel C/MPI systems for
-                        real engineering problems.
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Aidan Levy</p>
+                    <h1>Computer Science student focused on systems, HPC, and DSP</h1>
+                    <p class="hero-summary">
+                        I build performance-conscious software in C and Python with an emphasis on low-level
+                        implementation, parallel execution, and clear technical tradeoffs. My recent work centers on
+                        OpenMP and MPI, digital signal processing pipelines, and engineering decisions that improve
+                        runtime efficiency, reliability, and debuggability. I am especially interested in defense and
+                        systems environments where correctness and performance both matter.
                     </p>
 
                     <div class="hero-actions">
                         <a class="btn primary" href="#projects">View Projects</a>
-                        <a class="btn secondary" href="#contact">Get in Touch</a>
+                        <a class="btn secondary" href="assets/resume/AidanLevyResume.pdf"
+                            download="AidanLevyResume.pdf">Download Resume</a>
                     </div>
-                    <div class="hero-links">
+
+                    <div class="hero-links" aria-label="External profiles">
                         <a href="https://github.com/AidanLevy05" target="_blank" rel="noopener noreferrer">GitHub</a>
                         <span>•</span>
                         <a href="https://www.linkedin.com/in/aidan-levy/" target="_blank"
                             rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ABOUT -->
-        <section class="section reveal" id="about">
-            <div class="container section-inner two-column">
-
-                <!-- LEFT COLUMN: TEXT -->
-                <div>
-                    <h2>About</h2>
-                    <p>
-                        I am a Computer Science (Foundations, Algorithms, and Artificial Intelligence focus) and
-                        Data Science student with interests in artificial intelligence, high performance computing,
-                        and digital signal processing.I enjoy building technically challenging, useful systems that
-                        allow me to learn something real along the way.
-                    </p>
-                    <p>
-                        Recent work includes convolutional neural networks for facial emotion recognition,
-                        semi-supervised models, OpenMPI-based linear algebra in C, and a set of practical tools
-                        for working with PDFs and audio.
-                    </p>
-                    <p>
-                        Outside of computing, I am also a Brazilian Jiu Jitsu coach at Padawan Jiu Jitsu.
-                        You can learn more at
-                        <a href="https://padawanjj.com" target="_blank" rel="noopener noreferrer">padawanjj.com</a>.
-                    </p>
-                </div>
-
-                <!-- RIGHT COLUMN: IMAGE + LIST -->
-                <div class="about-highlight">
-
-                    <!-- IMAGE -->
-                    <div class="about-image" style="margin-bottom:20px; text-align:center;">
-                        <img src="assets/img/AidanLevy.jpeg" alt="Portrait of Aidan Levy" width="220" height="220"
-                            style="width:220px; border-radius:12px; object-fit:cover;">
-                    </div>
-
-                    <h3>What I enjoy working on</h3>
-                    <ul>
-                        <li>Neural networks (PyTorch) and practical ML</li>
-                        <li>High performance C / C++ with MPI &amp; OpenMP</li>
-                        <li>Digital signal processing &amp; audio tools</li>
-                        <li>Security-minded backend and automation scripts</li>
+                <aside class="hero-panel" aria-label="Technical focus">
+                    <p class="panel-label">Technical Focus</p>
+                    <ul class="hero-focus-list">
+                        <li>C and low-level programming on Linux and POSIX-style systems</li>
+                        <li>Parallel computing with OpenMP and MPI</li>
+                        <li>Digital signal processing, filtering, and FFT-based analysis</li>
+                        <li>Performance profiling, optimization, and systems reliability</li>
                     </ul>
-                </div>
 
+                    <div class="hero-facts">
+                        <div>
+                            <span class="fact-label">Current track</span>
+                            <strong>Computer Science + Data Science</strong>
+                        </div>
+                        <div>
+                            <span class="fact-label">Target work</span>
+                            <strong>Systems, HPC, DSP, defense</strong>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section class="section reveal" id="projects">
+        <section class="section" id="projects">
             <div class="container">
-                <h2>Projects</h2>
-                <p class="section-subtitle">
-                    These projects demonstrate my software engineering interests related to computer science and data
-                    science.
-                </p>
+                <div class="section-header">
+                    <p class="section-kicker">Selected Projects</p>
+                    <h2>Performance-oriented engineering work</h2>
+                    <p class="section-subtitle">
+                        I prioritize projects that require explicit control over data movement, concurrency,
+                        computational cost, and system behavior under load.
+                    </p>
+                </div>
 
-                <div class="grid projects-grid">
+                <div class="project-list">
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <div>
+                                <p class="project-type">Systems / Data Handling</p>
+                                <h3>ByteScatter</h3>
+                            </div>
+                            <a class="card-link" href="https://github.com/AidanLevy05/ByteScatter" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                        </div>
 
-                    <!-- MATRIX -->
-                    <article class="card reveal">
-                        <h3>Matrix</h3>
-                        <p>
-                            A full linear algebra engine in C featuring matrix multiplication, REF, RREF, LU
-                            decomposition, and OpenMPI-based parallelization. Includes benchmarks, speedup
-                            analysis, and a complete test suite.
+                        <p class="project-summary">
+                            Byte-oriented file distribution and reconstruction work focused on deterministic chunk
+                            layout, fault-tolerant recovery, and practical security constraints.
                         </p>
+
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>File I/O</li>
+                            <li>Systems Design</li>
+                            <li>Cryptography</li>
+                        </ul>
+
+                        <ul class="project-points">
+                            <li>Designed around byte-level chunking and scatter/gather reconstruction so payloads can
+                                be split, stored, and recovered with predictable structure instead of opaque blobs.</li>
+                            <li>Focused on efficient split and reassembly paths with attention to memory overhead,
+                                streaming behavior, and avoiding unnecessary data copies for larger files.</li>
+                            <li>Integrated encrypted metadata and fault-tolerant distribution decisions to balance
+                                recoverability with zero-knowledge style protection goals.</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <div>
+                                <p class="project-type">Distributed Computing</p>
+                                <h3>Linear Algebra OpenMPI</h3>
+                            </div>
+                            <a class="card-link" href="https://github.com/AidanLevy05/Matrix" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                        </div>
+
+                        <p class="project-summary">
+                            Distributed linear algebra engine in C covering matrix multiplication, REF, RREF, and LU
+                            decomposition with MPI-based work partitioning and benchmark-driven tuning.
+                        </p>
+
                         <ul class="tags">
                             <li>C</li>
-                            <li>OpenMPI</li>
+                            <li>MPI</li>
+                            <li>OpenMP</li>
                             <li>HPC</li>
                         </ul>
-                        <a class="card-link" href="https://github.com/AidanLevy05/Matrix" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub
-                        </a>
-                    </article>
 
-                    <!-- DSP -->
-                    <article class="card">
-                        <h3>Salisbury University DSP</h3>
-                        <p>
-                            A digital signal processing toolset including real-time filtering, compression
-                            prototypes, FFT visualizations, and a web-based interface written in Python and React.
-                        </p>
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>DSP</li>
-                            <li>Audio</li>
+                        <ul class="project-points">
+                            <li>Implemented distributed kernels for dense matrix operations with explicit rank
+                                coordination, data partitioning, and synchronization across MPI processes.</li>
+                            <li>Built runtime benchmarks across matrix sizes and process counts to measure speedup,
+                                scaling behavior, and the point where communication overhead begins to dominate.</li>
+                            <li>Tuned memory layout and communication strategy to keep hot loops compute-dense and
+                                reduce unnecessary coordination in performance-critical paths.</li>
                         </ul>
-                        <a class="card-link" href="https://github.com/AidanLevy05/salisburyuniversitydsp"
-                            target="_blank" rel="noopener noreferrer">
-                            View on GitHub
-                        </a>
                     </article>
 
-                    <!-- BYTESCATTER -->
-                    <article class="card">
-                        <h3>ByteScatter</h3>
-                        <p>
-                            A cryptographic utility written in Python focusing on efficient randomization, secure
-                            shuffling, optimized operations, and future expansion into encryption workflows.
-                        </p>
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>Cryptography</li>
-                            <li>Security</li>
-                        </ul>
-                        <a class="card-link" href="https://github.com/AidanLevy05/ByteScatter" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub
-                        </a>
-                    </article>
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <div>
+                                <p class="project-type">Digital Signal Processing</p>
+                                <h3>SalisburyDSP</h3>
+                            </div>
+                            <a class="card-link" href="https://github.com/AidanLevy05/salisburyuniversitydsp"
+                                target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
 
-                    <!-- GATEKEEPER -->
-                    <article class="card">
-                        <h3>GateKeeper</h3>
-                        <p>
-                            A Flask-based password vault with client-side encryption, device verification,
-                            role-based access control, SHA-256 password hashing, and secure credential storage.
-                            Fully deployed and functional.
+                        <p class="project-summary">
+                            Interactive audio processing pipeline for experimenting with filters, spectral transforms,
+                            and inspectable signal stages from ingestion through processed output.
                         </p>
+
                         <ul class="tags">
                             <li>Python</li>
                             <li>Flask</li>
-                            <li>Security</li>
+                            <li>FFT</li>
+                            <li>Audio Processing</li>
                         </ul>
-                        <a class="card-link" href="https://github.com/AidanLevy05/hackUMBC" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub
-                        </a>
-                    </article>
 
+                        <ul class="project-points">
+                            <li>Implemented filtering and FFT-based analysis in Python, exposing waveform and
+                                frequency-domain views through an interactive frontend for fast iteration and
+                                validation.</li>
+                            <li>Built an end-to-end pipeline that accepts audio input, applies configurable processing,
+                                and returns transformed output rather than limiting the project to isolated scripts.</li>
+                            <li>Structured the tool so intermediate signal behavior is visible, making it practical for
+                                comparing filter choices and debugging spectral changes instead of treating DSP as a
+                                black box.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- EXPERIENCE -->
-        <section class="section reveal" id="experience">
+        <section class="section" id="experience">
             <div class="container">
-                <h2>Experience</h2>
-                <p class="section-subtitle">
-                    Recent technical and leadership roles that align with my work in systems, networking, and teaching.
-                </p>
+                <div class="section-header">
+                    <p class="section-kicker">Experience</p>
+                    <h2>Technical work with operational constraints</h2>
+                    <p class="section-subtitle">
+                        My experience has combined production support, systems troubleshooting, and teaching with an
+                        increasing focus on secure and performance-sensitive software work.
+                    </p>
+                </div>
 
-                <div class="grid experience-grid">
-
-                    <!-- NETWORK ENGINEER INTERN -->
-                    <article class="card experience-card reveal">
-                        <h3>Network Engineer Intern</h3>
-                        <p class="muted">June 2024 – Present • Salisbury, MD</p>
+                <div class="experience-grid">
+                    <article class="card experience-card featured-experience">
+                        <div class="experience-heading">
+                            <div>
+                                <h3>ASRC Federal (TRMCi)</h3>
+                                <p class="experience-role">Incoming Software Engineering Intern</p>
+                            </div>
+                            <p class="muted">Summer 2026</p>
+                        </div>
                         <ul class="experience-points">
-                            <li>Responsible for maintenance, upgrades, and provisioning of 200+ Aruba-635 wireless
-                                access points across campus.</li>
-                            <li>Provide ticket-based support, troubleshoot network issues, patch cables, and identify
-                                root causes of connection failures.</li>
+                            <li>Joining a secure defense environment to support software tied to data processing,
+                                analysis, and reliability-focused engineering workflows.</li>
+                            <li>Role emphasis is intentionally described at a high level, but the work aligns with my
+                                interest in systems software, performance-conscious implementation, and disciplined
+                                development under operational constraints.</li>
+                            <li>Particularly interested in the rigor required for secure environments where correctness,
+                                maintainability, and traceable engineering decisions carry real consequences.</li>
                         </ul>
                     </article>
 
-                    <!-- PADAWAN JIU JITSU -->
-                    <article class="card experience-card reveal">
-                        <h3>Padawan Jiu Jitsu Founder</h3>
-                        <p class="muted">January 2023 – Present • Ocean View, DE</p>
-                        <ul class="experience-points">
-                            <li>Founded and operate a Brazilian Jiu-Jitsu school serving 50+ clients, handling
-                                marketing, operations, client relations, and finances.</li>
-                            <li>Built and maintain an online presence to expand outreach, manage scheduling, and drive
-                                client engagement.</li>
-                        </ul>
-                        <a class="card-link" href="https://www.padawanjj.com" target="_blank" rel="noopener noreferrer">
-                            View Padawan Jiu Jitsu Website
-                        </a>
-                    </article>
-
-                    <!-- LAB ASSISTANT -->
                     <article class="card experience-card">
-                        <h3>Computer Lab Assistant</h3>
-                        <p class="muted">August 2024 – Present • Salisbury, MD</p>
+                        <div class="experience-heading">
+                            <div>
+                                <h3>Salisbury University</h3>
+                                <p class="experience-role">Network Engineer Intern</p>
+                            </div>
+                            <p class="muted">June 2024 - Present</p>
+                        </div>
                         <ul class="experience-points">
-                            <li>Assisted 100+ students in COSC-220 (Computer Science II) and COSC-117 (Programming
-                                Fundamentals).</li>
-                            <li>Help students debug code and understand core programming concepts during lab sessions.
-                            </li>
-                            <li>Provide guidance on logic, syntax, and problem-solving strategies during labs and weekly
-                                office hours.</li>
+                            <li>Maintain, upgrade, and provision 200+ Aruba-635 wireless access points across campus
+                                infrastructure.</li>
+                            <li>Troubleshoot network failures through ticket-based support, physical tracing, and root
+                                cause analysis across live production environments.</li>
                         </ul>
                     </article>
 
+                    <article class="card experience-card">
+                        <div class="experience-heading">
+                            <div>
+                                <h3>Salisbury University</h3>
+                                <p class="experience-role">Computer Lab Assistant</p>
+                            </div>
+                            <p class="muted">August 2024 - Present</p>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Supported 100+ students in programming courses by debugging code, clarifying
+                                algorithms, and reinforcing problem-solving discipline.</li>
+                            <li>Helped students work through logic and syntax issues in C and introductory programming
+                                settings without abstracting away the underlying mechanics.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- SKILLS -->
-        <section id="skills" class="section skills-section reveal">
+        <section class="section skills-section" id="skills">
             <div class="container">
-                <h2 class="section-title">Tech Stack</h2>
-                <p class="section-intro">
-                    I work across systems, AI, and backend development. Below are my strengths in those categories.
-                </p>
+                <div class="section-header">
+                    <p class="section-kicker">Technical Skills</p>
+                    <h2>Tools and domains I use most</h2>
+                </div>
 
                 <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3>Languages &amp; Core</h3>
+                    <article class="skill-group">
+                        <h3>Languages</h3>
                         <ul>
-                            <li><strong>C / C++</strong> – systems programming, matrix libraries, OpenMPI projects</li>
-                            <li><strong>Python</strong> – ML experiments, data scripts, Flask backends</li>
-                            <li><strong>Bash / Linux CLI</strong> – automation, environment setup, tooling</li>
+                            <li>C</li>
+                            <li>Python</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div class="skill-group">
-                        <h3>Systems &amp; High-Performance Computing</h3>
+                    <article class="skill-group">
+                        <h3>Systems</h3>
                         <ul>
-                            <li><strong>MPI (OpenMPI)</strong> – parallel matrix multiply, REF/RREF, LU on distributed
-                                processes</li>
-                            <li><strong>OpenMP</strong> – shared-memory parallelism and loop-level speedups</li>
-                            <li><strong>Performance analysis</strong> – timing, speedup, efficiency, and scaling
-                                experiments</li>
+                            <li>POSIX</li>
+                            <li>Linux</li>
+                            <li>OpenMP</li>
+                            <li>MPI</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div class="skill-group">
-                        <h3>Machine Learning &amp; Data</h3>
+                    <article class="skill-group">
+                        <h3>DSP</h3>
                         <ul>
-                            <li><strong>PyTorch</strong> – CNNs (e.g., FER2013), semi-supervised models</li>
-                            <li><strong>NumPy / pandas</strong> – numeric work, data cleaning, preprocessing</li>
-                            <li><strong>Matplotlib</strong> – training curves and performance visualizations</li>
+                            <li>FFT</li>
+                            <li>Filtering</li>
+                            <li>Audio processing</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div class="skill-group">
-                        <h3>Web &amp; Backend</h3>
+                    <article class="skill-group">
+                        <h3>Tools</h3>
                         <ul>
-                            <li><strong>Flask</strong> – lightweight backends and small APIs</li>
-                            <li><strong>Security patterns</strong> – client-side crypto, device registration, hashing,
-                                tokens</li>
-                            <li><strong>HTML / CSS / JS</strong> – this portfolio and small frontends on GitHub Pages
-                            </li>
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>CMake</li>
                         </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>Tools &amp; Workflow</h3>
-                        <ul>
-                            <li><strong>Git &amp; GitHub</strong> – SSH, branching, private course monorepos, Pages
-                                deploys</li>
-                            <li><strong>Linux (Fedora, Debian, Kali)</strong> – primary dev and security environment
-                            </li>
-                            <li><strong>VSCode / Jupyter</strong> – debugging, experimentation, reports</li>
-                        </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-kicker">Education</p>
+                    <h2>Academic background</h2>
+                </div>
 
-        <!-- CONTACT -->
-        <section class="section reveal" id="contact">
-            <div class="container section-inner">
-                <h2>Contact</h2>
-                <p>
-                    Want to talk about a project, internship, collaboration, or anything technical?
-                    The best way to reach me is by email.
-                </p>
-                <p class="contact-email">
-                    <a href="mailto:aidanjlevy@gmail.com">aidanjlevy@gmail.com</a>
-                </p>
-                <p class="contact-note">
-                    You can also reach out on
+                <article class="education-card">
+                    <div>
+                        <h3>Salisbury University</h3>
+                        <p class="education-program">Computer Science (AI Track) + Data Science</p>
+                    </div>
+                    <div class="education-meta">
+                        <p><span>GPA</span><strong>3.95</strong></p>
+                        <p><span>Relevant coursework</span><strong>High Performance Computing, Linear Algebra,
+                                Advanced Data Structures</strong></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-kicker">Contact</p>
+                    <h2>Professional links</h2>
+                    <p class="section-subtitle">
+                        Best for systems, HPC, DSP, and defense-adjacent opportunities.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <a href="https://github.com/AidanLevy05" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.linkedin.com/in/aidan-levy/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>.
-                </p>
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:aidanjlevy@gmail.com">aidanjlevy@gmail.com</a>
+                </div>
             </div>
         </section>
     </main>
