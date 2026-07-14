@@ -8,7 +8,17 @@ export function Hero() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start lg:gap-16">
           <div className="max-w-2xl">
             <p className="font-mono text-sm text-accent">{person.name}</p>
-            <h1 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-fg sm:text-4xl md:text-[2.75rem]">
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {person.clearance.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-full border border-border bg-surface px-3 py-1 font-mono text-xs text-muted"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-fg sm:text-4xl md:text-[2.75rem]">
               {person.headline}
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">

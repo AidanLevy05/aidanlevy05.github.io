@@ -21,7 +21,7 @@ export function SiteHeader() {
           </a>
 
           <nav
-            className="hidden items-center gap-7 md:flex"
+            className="hidden items-center gap-6 lg:flex"
             aria-label="Primary"
           >
             {navItems.map((item) => (
@@ -49,7 +49,7 @@ export function SiteHeader() {
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label="Toggle navigation menu"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border text-muted transition-colors hover:text-fg md:hidden"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border text-muted transition-colors hover:text-fg lg:hidden"
             >
               <svg
                 width="16"
@@ -76,7 +76,7 @@ export function SiteHeader() {
         <nav
           id="mobile-nav"
           aria-label="Mobile"
-          className="border-t border-border bg-bg md:hidden"
+          className="border-t border-border bg-bg lg:hidden"
         >
           <Container>
             <ul className="flex flex-col py-2">

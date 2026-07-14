@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${person.name} | Systems, HPC, and DSP`,
+  title: `${person.name} | Systems, HPC, and DoD Test & Evaluation`,
   description: person.metaDescription,
   keywords: [
     "Aidan Levy",
@@ -29,7 +29,9 @@ export const metadata: Metadata = {
     "HPC",
     "MPI",
     "OpenMP",
-    "digital signal processing",
+    "DoD test and evaluation",
+    "ROS 2",
+    "robotics",
     "C",
     "Linux",
     "Salisbury University",
@@ -40,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: `${person.name} | Systems, HPC, and DSP`,
+    title: `${person.name} | Systems, HPC, and DoD Test & Evaluation`,
     description: person.metaDescription,
     siteName: `${person.name} — Portfolio`,
     images: [{ url: "/AidanLevy.jpeg", width: 800, height: 800, alt: person.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${person.name} | Systems, HPC, and DSP`,
+    title: `${person.name} | Systems, HPC, and DoD Test & Evaluation`,
     description: person.metaDescription,
     images: ["/AidanLevy.jpeg"],
   },

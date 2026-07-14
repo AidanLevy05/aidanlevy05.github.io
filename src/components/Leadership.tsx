@@ -19,7 +19,21 @@ export function Leadership() {
               <h3 className="text-base font-medium text-fg">{entry.role}</h3>
               <p className="font-mono text-xs text-faint">{entry.period}</p>
             </div>
-            <p className="mt-1 text-sm text-accent">{entry.org}</p>
+            <p className="mt-1 text-sm text-accent">
+              {entry.href ? (
+                <a
+                  href={entry.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-4 transition-colors hover:text-accent-strong hover:underline"
+                >
+                  {entry.org}
+                  <span aria-hidden="true"> ↗</span>
+                </a>
+              ) : (
+                entry.org
+              )}
+            </p>
             {entry.description ? (
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 {entry.description}

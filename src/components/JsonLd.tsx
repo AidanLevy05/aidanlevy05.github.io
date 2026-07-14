@@ -17,7 +17,8 @@ export function JsonLd() {
     knowsAbout: [
       "Systems Programming",
       "High-Performance Computing",
-      "Digital Signal Processing",
+      "DoD Test & Evaluation",
+      "ROS 2 Robotics",
       "Machine Learning",
       "C",
       "Python",
