@@ -12,33 +12,34 @@ export const siteUrl = "https://aidanlevy05.github.io";
 export const person = {
   name: "Aidan Levy",
   headline:
-    "Computer Science & Data Science student building performance-focused systems software",
+    "Computer Science & Data Science student working on DoD test & evaluation, HPC, and systems software",
   metaDescription:
-    "Aidan Levy is a Computer Science (AI focus) and Data Science student at Salisbury University focused on systems programming, high-performance computing, and digital signal processing.",
+    "Aidan Levy is an Active Secret–cleared Computer Science (AI track) and Data Science student at Salisbury University with hands-on DoD test & evaluation experience and a focus on high-performance computing, Linux, and ROS 2 systems.",
   // 2–3 sentence hero introduction.
   intro:
-    "I'm a Computer Science (AI focus) and Data Science student at Salisbury University, working mostly in C and Python on software where performance and correctness both matter. My work centers on parallel computing with OpenMP and MPI, digital signal processing, and machine learning tooling. I care about low-level detail, clear engineering tradeoffs, and building things that hold up under real constraints.",
+    "I'm a Computer Science (AI track) and Data Science student at Salisbury University, currently a software engineering intern with ASRC Federal on the DoD's GhostWriter test-and-evaluation effort. My work spans data-fusion pipelines and applied AI, high-performance and systems programming in C on Linux, and ROS 2 robotics. I care about low-level detail, clear engineering tradeoffs, and building things that hold up under real constraints.",
+  clearance: ["Active Secret Clearance", "U.S. Citizen"],
   email: "aidanjlevy@gmail.com",
   github: "https://github.com/AidanLevy05",
   githubHandle: "AidanLevy05",
   linkedin: "https://www.linkedin.com/in/aidan-levy/",
   linkedinHandle: "aidan-levy",
   resume: "/AidanLevyResume.pdf",
-  location: "Maryland, USA",
+  location: "Salisbury, MD",
 } as const;
 
 export const heroFocus: string[] = [
-  "Systems programming in C on Linux",
-  "Parallel computing with OpenMP and MPI",
-  "Digital signal processing and FFT-based analysis",
+  "DoD test & evaluation and data-fusion pipelines",
+  "High-performance computing with OpenMPI and OpenMP",
+  "Systems programming in C and ROS 2 on Linux",
   "Machine learning with PyTorch and scikit-learn",
 ];
 
 // About prose — kept factual and understated.
 export const about: string[] = [
-  "I study Computer Science with an AI focus alongside Data Science at Salisbury University, in the Clarke Honors College. Most of what I enjoy sits close to the machine: writing C on Linux, reasoning about memory and data movement, and understanding why one implementation is faster or more reliable than another.",
-  "A lot of my recent work is in high-performance and parallel computing — distributing linear algebra across processes with MPI and OpenMP — and in digital signal processing, where I build pipelines that make filtering and frequency-domain behavior observable rather than opaque. I also work across the data and machine learning stack with PyTorch, scikit-learn, and TensorFlow.",
-  "Outside of coursework I teach and lead. I help students debug and reason through programming fundamentals as a lab assistant, and I founded and run a jiu-jitsu training business. Both come from the same place: a preference for consistent, disciplined work over shortcuts, and for explaining things clearly.",
+  "I study Computer Science with an AI track alongside Data Science, with a minor in Mathematics, at Salisbury University in the Clarke Honors College. Most of what I enjoy sits close to the machine: writing C on Linux, reasoning about memory and data movement, and understanding why one implementation is faster or more reliable than another.",
+  "Right now I'm a software engineering intern with ASRC Federal (TRMCi) on GhostWriter, a DoD test-and-evaluation report-generation effort originating at Dugway Proving Ground, where I build Python data-fusion pipelines and applied-AI workflows. Alongside that I work in high-performance computing — distributing linear algebra across processes with MPI and OpenMP — in ROS 2 robotics on the Unitree G1, and across the data and machine learning stack with PyTorch, scikit-learn, and TensorFlow.",
+  "Outside of the technical work I teach and lead. I help students debug and reason through their code as a lab assistant, and I founded and run a children's jiu-jitsu program and the university's jiu-jitsu club. Both come from the same place: a preference for consistent, disciplined work over shortcuts, and for explaining things clearly.",
 ];
 
 export interface Job {
@@ -51,30 +52,41 @@ export interface Job {
 
 export const experience: Job[] = [
   {
-    org: "ASRC Federal (TRMCi)",
-    role: "Incoming Software Engineering Intern",
-    period: "Summer 2026",
-    note: "Upcoming",
+    org: "ASRC Federal (TRMCi), CDAO",
+    role: "Software Engineering Intern",
+    period: "June 2026 — Present",
+    note: "Current",
     points: [
-      "Joining as a software engineering intern in a secure defense-focused environment.",
+      "Build Python data-fusion pipelines for GhostWriter, a Pentagon-level DoD test-and-evaluation report-generation initiative originating at Dugway Proving Ground — ingesting 1,000+ technical reports, converting PDFs to text, and combining extracted text with CSV/PDF metadata for taxonomy discovery.",
+      "Develop ATEC-facing prompt strategies and improvement proposals for GhostWriter, comparing a $50K-per-document, four-week baseline against a roughly $10, 18-minute AI-assisted generation cycle — a projected up to $115M annually across ATEC's 2,300-test workload.",
+      "Automated a mentor–mentee matching workflow that reactivated a program dormant for seven years, eliminating an estimated 1,200+ annual labor hours (~$62K/yr) at Dugway, with projected Army-wide savings of up to $11.5M annually if scaled.",
     ],
   },
   {
-    org: "Salisbury University",
-    role: "Network Engineer Intern",
-    period: "2024 — Present",
+    org: "Real Robotics Lab",
+    role: "Unitree G1 Robotics Researcher",
+    period: "January 2026 — May 2026",
     points: [
-      "Provide ticket-based support: troubleshooting networking issues, patching cables, and identifying the root cause of connection failures.",
-      "Handle maintenance, upgrades, and provisioning for 200+ Aruba-635 wireless access points across campus.",
+      "Troubleshot ROS 2 / DDS telemetry loss between the Unitree G1 and its Linux control host, isolating the issue to network/firewall restrictions and coordinating with IT to restore DDS transport and discovery traffic.",
+      "Developed Linux-based ROS 2 joint-control software for Unitree G1 locomotion and state transitions, coordinating with vision and grasping teams during cross-functional integration meetings.",
+    ],
+  },
+  {
+    org: "Salisbury University IT",
+    role: "Network Engineer Intern",
+    period: "June 2024 — May 2026",
+    points: [
+      "Deployed, configured, and validated 500+ Aruba 635 access points across 15+ buildings in a campus-wide infrastructure upgrade serving 7,000+ users.",
+      "Diagnosed and resolved Layer 1–2 connectivity issues across the campus Aruba network, tracing faults through switchports, VLAN configuration, and physical infrastructure.",
+      "Restored ~100 Windows endpoints during the 2024 CrowdStrike outage using standardized USB-based recovery procedures, supporting campus-wide IT service restoration.",
     ],
   },
   {
     org: "Salisbury University",
     role: "Computer Lab Assistant",
-    period: "2024 — Present",
+    period: "August 2024 — May 2026",
     points: [
-      "Assisted 100+ students in COSC-220 and COSC-117 with core programming concepts and debugging their code during lab sessions.",
-      "Provided guidance on logic, syntax, and problem-solving strategy to reinforce course material during labs and weekly office hours.",
+      "Supported 50+ students weekly across three CS courses — debugging code, resolving implementation errors, and grading assignments on correctness, style, and problem-solving approach.",
     ],
   },
 ];
@@ -90,29 +102,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "OpenMPI Linear Algebra",
+    name: "Distributed Linear Algebra Engine",
     type: "High-Performance Computing",
     github: "https://github.com/AidanLevy05/Matrix",
     summary:
-      "Heavily optimized linear algebra in C using OpenMPI for parallel matrix computation across a distributed-memory model.",
-    tech: ["C", "OpenMPI", "OpenMP", "HPC"],
+      "A distributed linear algebra engine in C, parallelized with OpenMPI across a distributed-memory model.",
+    tech: ["C", "OpenMPI", "HPC"],
     points: [
-      "Implemented parallel matrix multiplication, RREF, and LU decomposition, distributing work across processes to maximize performance.",
-      "Explored distributed-memory models and tuning to keep computation dense and coordination overhead low.",
-      "Targeted the high-efficiency algorithms used in linear programming and operations research.",
-    ],
-  },
-  {
-    name: "SalisburyDSP",
-    type: "Digital Signal Processing",
-    github: "https://github.com/AidanLevy05/salisburyuniversitydsp",
-    summary:
-      "A research project that implements audio filters in Python and visualizes frequency-domain transformations through a custom web frontend.",
-    tech: ["Python", "DSP", "Flask", "D3.js"],
-    points: [
-      "Implemented audio filters in Python using DSP libraries, with frequency-domain transformations visualized via a custom JavaScript and D3.js frontend.",
-      "Built a web interface that lets users input YouTube links, apply audio effects, and download the processed audio.",
-      "Handled backend processing and the request pipeline with Flask.",
+      "Accelerated Gaussian elimination to RREF by 14.7× across 8 MPI processes, using row-cyclic distribution with MPI_Bcast pivot propagation and cache-blocked local elimination.",
+      "Profiled communication-versus-compute tradeoffs across matrix sizes and process counts, isolating pivot broadcast as the dominant scaling bottleneck and mapping speedup dropoff points.",
     ],
   },
   {
@@ -120,12 +118,21 @@ export const projects: Project[] = [
     type: "Security / Systems",
     github: "https://github.com/AidanLevy05/ByteScatter",
     summary:
-      "A secure multi-cloud file distribution system built for fault tolerance and zero-knowledge data protection.",
-    tech: ["Python", "AES-256-GCM", "ChaCha20-Poly1305", "Cryptography"],
+      "A secure distributed file-storage system built for fault tolerance and zero-knowledge data protection.",
+    tech: ["Python", "AES-256-GCM", "ChaCha20-Poly1305"],
     points: [
-      "Designed multi-cloud distribution for fault tolerance and zero-knowledge protection of stored data.",
-      "Encrypted payloads with AES-256-GCM and ChaCha20-Poly1305, backed by a local metadata database for retrieval.",
-      "Won 2nd place in Cybersecurity at the HenHacks hackathon.",
+      "Built a secure distributed file-storage prototype in Python with AES-256-GCM authenticated encryption, per-fragment integrity checks, and configurable endpoint-based chunking.",
+      "Won 2nd place in the Cybersecurity track at HenHacks 2025.",
+    ],
+  },
+  {
+    name: "ATLAS",
+    type: "Full-Stack Web",
+    summary:
+      "A full-stack job-application tracker for managing a 100+ application pipeline end to end.",
+    tech: ["FastAPI", "PostgreSQL", "React", "TypeScript"],
+    points: [
+      "Shipped a typed FastAPI/SQLAlchemy REST API backed by PostgreSQL 16 with Alembic migrations, and a React/TypeScript frontend.",
     ],
   },
 ];
@@ -137,13 +144,132 @@ export interface SkillGroup {
 
 export const skills: SkillGroup[] = [
   {
-    label: "Languages",
-    items: ["Python", "C++", "C", "Java", "JavaScript", "Bash", "HTML", "CSS"],
+    label: "Languages & Tools",
+    items: [
+      "C",
+      "C++",
+      "Python",
+      "Bash",
+      "SQL",
+      "TypeScript",
+      "Java",
+      "Git",
+      "Docker",
+      "Azure",
+      "GCC",
+      "Make",
+      "gdb",
+      "valgrind",
+    ],
   },
-  { label: "Parallel / HPC", items: ["OpenMPI", "OpenMP"] },
-  { label: "ML / Data", items: ["PyTorch", "scikit-learn", "TensorFlow", "NumPy"] },
-  { label: "Web", items: ["Flask", "React"] },
-  { label: "Tools", items: ["Git"] },
+  {
+    label: "Systems, HPC & Networking",
+    items: [
+      "Linux",
+      "POSIX",
+      "Systems programming",
+      "Concurrency",
+      "IPC",
+      "Shared memory",
+      "Memory management",
+      "OpenMPI / OpenMP",
+      "Multithreading",
+      "Performance profiling",
+      "Benchmarking",
+      "ROS 2",
+    ],
+  },
+  {
+    label: "Web & Full-Stack",
+    items: [
+      "FastAPI",
+      "REST APIs",
+      "SQLAlchemy 2.0",
+      "Alembic",
+      "PostgreSQL",
+      "React",
+      "Vite",
+    ],
+  },
+  {
+    label: "Testing & Defense",
+    items: [
+      "DoD T&E",
+      "Verification & validation (V&V)",
+      "Test automation",
+      "Requirements tracing",
+      "Test planning & execution",
+      "Test-data classification",
+      "Expected-vs-observed analysis",
+      "Root-cause analysis",
+    ],
+  },
+  {
+    label: "Security",
+    items: ["AES-256-GCM", "ChaCha20-Poly1305", "RSA", "HKDF"],
+  },
+  {
+    label: "AI & Data",
+    items: ["PyTorch", "TensorFlow", "scikit-learn", "NumPy", "Pandas"],
+  },
+];
+
+// Research entries reuse the Job shape (role = title, org = context/advisor).
+export const research: Job[] = [
+  {
+    role: "Undergraduate Honors Thesis",
+    org: "Clarke Honors College",
+    period: "August 2025 — December 2026",
+    points: [
+      "Designed an IRB-pending empirical study examining how conversational-AI use relates to college-aged students' wellbeing, perceived dependence, and emotional reliance.",
+      "Conducted the literature synthesis, developed the survey instrument, and defined study methodology, with statistical analysis planned in Python/Pandas for human-subjects data.",
+    ],
+  },
+  {
+    role: "Digital Signal Processing Research",
+    org: "Advised by Dr. Cone",
+    period: "August 2024 — May 2025",
+    points: [
+      "Implemented six audio effects in NumPy/SciPy — Butterworth shelving filters, resonant peaking EQ, compression, multi-tap reverb, and LFO-modulated chorus over user-defined time windows.",
+      "Built a 44.1 kHz DSP pipeline with ffmpeg conversion and yt-dlp audio ingest, and reproducible signal-processing workflows; presented findings at the Salisbury University Student Research Conference (SUSRC).",
+    ],
+  },
+  {
+    role: "AI Policy Research",
+    org: "HONR 111 Research Seminar",
+    period: "August 2023 — December 2023",
+    points: [
+      "Reviewed U.S. policy responses to AI mental-health chatbots — regulatory gaps, privacy protections, and clinical-safety concerns — and presented oversight recommendations at SUSRC.",
+    ],
+  },
+];
+
+export interface Award {
+  label: string;
+  href?: string;
+}
+
+export const awards: Award[] = [
+  {
+    label: "Richard A. Henson STEM Scholarship — merit award, Salisbury University",
+    href: "https://www.salisbury.edu/academic-offices/science-and-technology/about/henson-scholars.aspx",
+  },
+  {
+    label:
+      "Bellavance Honors Scholarship — Clarke Honors College merit award (renewable)",
+    href: "https://www.salisbury.edu/academic-offices/honors/for-prospective-students.aspx",
+  },
+  {
+    label:
+      "Upsilon Pi Epsilon (Computer Science) & Pi Mu Epsilon (Mathematics) Honor Societies",
+  },
+  { label: "Dean's List — all semesters" },
+  { label: "HenHacks 2025 — 2nd Place, Cybersecurity Track (ByteScatter)" },
+  {
+    label:
+      "Brazilian Jiu-Jitsu Brown Belt · 2022 IBJJF Indianapolis International Open champion",
+    href: "https://www.coastalpoint.com/lifestyle/arts_entertainment/ocean-view-s-aidan-levy-felt-great-to-win-brazilian-jui-jitsu-title/article_e8ede34e-c737-11ec-b97b-fb5c1e22a8f6.html",
+  },
 ];
 
 export interface LeadershipEntry {
@@ -151,36 +277,31 @@ export interface LeadershipEntry {
   role: string;
   period: string;
   description?: string;
+  href?: string;
 }
 
 export const leadership: LeadershipEntry[] = [
   {
-    org: "Padawan Jiu Jitsu",
-    role: "Founder & Instructor",
-    period: "2023 — Present",
+    org: "Padawan Jiu-Jitsu",
+    role: "Founder & Head Instructor",
+    period: "January 2023 — Present",
+    href: "https://www.padawanjj.com",
     description:
-      "Founded and operate a Brazilian jiu-jitsu training business serving 50+ clients — handling marketing, operations, client relations, and finances, and building an online presence to expand outreach.",
+      "Founded and run a children's Brazilian jiu-jitsu program — teaching three times weekly to 40+ current students and coaching 50+ through belt and stripe promotions — and manage scheduling, enrollment, curriculum, and the program website end to end.",
   },
   {
-    org: "Salisbury University Brazilian Jiu-Jitsu Club",
-    role: "President & Founder",
-    period: "2023 — Present",
+    org: "SU Brazilian Jiu-Jitsu Club",
+    role: "Founder & President",
+    period: "October 2023 — Present",
     description:
-      "Founded and lead the university's Brazilian jiu-jitsu club.",
+      "Founded and led Salisbury University's first Brazilian jiu-jitsu club, securing official university recognition and growing membership to 30 students across all experience levels.",
   },
   {
-    org: "Salisbury University",
-    role: "Cybersecurity Club · Student Researcher",
-    period: "Present",
+    org: "GullHacks — Salisbury University's Hackathon",
+    role: "Web Developer",
+    period: "January 2026 — Present",
     description:
-      "Active in the Cybersecurity Club and involved in student research.",
-  },
-  {
-    org: "Brazilian Jiu-Jitsu",
-    role: "Brown Belt",
-    period: "2015 — Present",
-    description:
-      "Ten-plus years of consistent training — a long-running exercise in discipline and incremental progress.",
+      "Built and styled the website for the university's first hackathon, collaborating with the design team on layout and visual identity.",
   },
 ];
 
@@ -195,15 +316,18 @@ export interface Education {
 
 export const education: Education = {
   school: "Salisbury University",
-  program: "B.S. in Computer Science (AI Focus) & Data Science",
+  program: "B.S. Computer Science (AI Track) & B.S. Data Science, Minor in Mathematics",
   detail: "Clarke Honors College",
-  period: "2023 — Present",
-  gpa: "3.95",
+  period: "August 2023 — May 2027",
+  gpa: "3.91",
   coursework: [
-    "Advanced Data Structures and Algorithms",
     "High Performance Computing",
+    "Systems Software",
+    "Advanced Data Structures & Algorithms",
+    "Cryptography",
+    "Database Design & Implementation",
+    "Artificial Intelligence",
     "Linear Algebra",
-    "Introduction to Convolutional Neural Networks",
   ],
 };
 
@@ -216,6 +340,7 @@ export const navItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Research", href: "#research" },
   { label: "Skills", href: "#skills" },
   { label: "Leadership", href: "#leadership" },
   { label: "Education", href: "#education" },

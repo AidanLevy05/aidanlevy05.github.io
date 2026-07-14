@@ -4,8 +4,10 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
+import { Research } from "@/components/Research";
 import { Skills } from "@/components/Skills";
 import { Leadership } from "@/components/Leadership";
+import { Awards } from "@/components/Awards";
 import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 import { JsonLd } from "@/components/JsonLd";
@@ -26,8 +28,10 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <Research />
         <Skills />
         <Leadership />
+        <Awards />
         <Education />
         <Contact />
       </main>

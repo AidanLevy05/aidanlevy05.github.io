@@ -4,7 +4,7 @@ import { skills } from "@/data/content";
 export function Skills() {
   return (
     <Section id="skills" kicker="Skills" heading="Tools and domains">
-      <dl className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+      <dl className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
         {skills.map((group) => (
           <div key={group.label}>
             <dt className="font-mono text-xs uppercase tracking-[0.15em] text-faint">

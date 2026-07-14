@@ -7,7 +7,7 @@ export function Experience() {
       id="experience"
       kicker="Experience"
       heading="Work with real constraints"
-      subtitle="Production support, systems troubleshooting, and teaching — plus incoming defense-focused software engineering."
+      subtitle="Defense-focused software engineering, robotics research, network engineering, and teaching."
     >
       <div className="space-y-10">
         {experience.map((job) => (
